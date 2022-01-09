@@ -14,7 +14,7 @@ if selectst:
     dosya=dosya[selectst]
     dosya=dosya.reset_index()
 
-fig=px.line(dosya,x="Date",y=selectst,markers=True)
+fig=px.line(dosya,x="Date",y=selectst)
 st.plotly_chart(fig,use_container_width=True)
 
 col1,col2,col3=st.columns(3)
